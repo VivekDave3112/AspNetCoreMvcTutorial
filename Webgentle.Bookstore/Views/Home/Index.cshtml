@@ -1,0 +1,47 @@
+﻿@section breadcrumb{
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Page 1</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Index</li>
+        </ol>
+    </nav>
+
+}
+
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1>
+            Welcome to Book Store. 
+        </h1>
+        <p class="lead text-muted">
+            Here is the Home Page for my Book Store Application. And i am designing my first responsive page for application.
+            And it is going to be very exciting throught this journey.
+        </p>
+
+        <p>
+            <a href="#" class="btn btn-primary ny-2">Search Books</a>
+        </p>
+    </div>
+</section>
+
+
+<div class="py-5 bg-light ">
+    <div class="container">
+        @*<h3 class="h3">Top Books</h3>*@
+        <big>Top Books</big>
+
+        @*@await Component.InvokeAsync("TopBooks", new { count = 4});*@
+        <vc:top-books count="6"></vc:top-books>
+
+        
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            //alert("Document is ready!!")
+        })</script>
+}
+

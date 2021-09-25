@@ -1,0 +1,30 @@
+﻿@model IEnumerable<BookModel>
+
+@{
+    var param = new Dictionary<string, string>()
+    {
+        {"Name","Vivek" },
+        {"Author", "Vishal" },
+        {"Brother", "Rahul" }
+    };
+
+}
+
+
+
+
+
+<div class="container">
+    <h3 class="display-4">All books</h3>
+    <div class="row">
+
+        @foreach (var book in Model)
+        {
+            <div class="col-md-4">
+                <partial name="_bookThumbnail" model="@book"/>
+            </div>
+        }
+
+
+    </div>
+</div>

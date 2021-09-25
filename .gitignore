@@ -1,0 +1,4 @@
+#some library files that could be generated any time so excluding from my current project.
+wwwroot/jquery-validate/*
+wwwroot/jquery-validation-unobtrusive/*
+wwwroot/lib/*
